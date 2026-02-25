@@ -7,35 +7,28 @@ ML project for customer churn prediction using supervised learning, unsupervised
 ## Team Members
 
 Rowa Alshehri - 444200723
-ٌخ
+Wesam Alarifi - 444200962
+Muntaha Alnasser - 444200905
+Joud Alajlan - 444201217
+Jumanah Alharbi - 444203677
+Sarah Albuqami  - 444200576
+Laila Aldayhani - 444201199
 ---
 
 ## Project Title
 
-Customer Churn Prediction in the Banking Sector
+Customer Churn Prediction Using Machine Learning
 
 ---
 
 ## Motivation
 
-Customer retention is a critical factor in the banking industry. Losing customers directly impacts revenue, long-term growth, and customer lifetime value. Predicting customer churn allows banks to identify at-risk customers early and apply retention strategies such as personalized offers, improved services, and targeted marketing campaigns.
+Customer churn is a critical challenge in the banking industry. When customers leave a bank, it directly impacts revenue, profitability, and long-term growth. Acquiring new customers is significantly more expensive than retaining existing ones, which makes churn prediction an essential business objective.
 
-This project aims to build a classification-based advice system that predicts whether a customer will leave the bank or remain an active customer.
+We selected this problem because customer churn prediction is a real-world classification problem widely studied in machine learning. It provides practical value by enabling banks to identify at-risk customers and apply proactive retention strategies such as personalized offers and improved engagement.
 
----
+The selected dataset from Kaggle is suitable for this task because it contains structured customer data, a clearly defined binary target variable (Exited), and sufficient feature diversity to perform meaningful analysis and modeling.
 
-## Problem Statement
-
-The objective of this project is to develop a supervised machine learning model that predicts customer churn.
-
-Churn is represented by the variable:
-
-- 0 → Customer stays  
-- 1 → Customer exits  
-
-The system analyzes demographic, financial, and behavioral features to classify customers into churn or non-churn categories.
-
-This is formulated as a binary classification problem.
 
 ---
 
