@@ -1,23 +1,24 @@
-# SWE485-Project-Group4
+# SWE485 – Project Group 4  
+Customer Churn Prediction Using Machine Learning
+
 ML project for customer churn prediction using supervised learning, unsupervised learning, and Generative AI integration.
-# Customer Churn Prediction – Phase 1
 
+---
 
+## Customer Churn Prediction – Phase 1
+
+---
 
 ## Team Members
 
-Rowa Alshehri - 444200723
-Wesam Alarifi - 444200962
-Muntaha Alnasser - 444200905
-Joud Alajlan - 444201217
-Jumanah Alharbi - 444203677
-Sarah Albuqami  - 444200576
-Laila Aldayhani - 444201199
----
+- **Rowa Alshehri** – 444200723  
+- **Wesam Alarifi** – 444200962  
+- **Muntaha Alnasser** – 444200905  
+- **Joud Alajlan** – 444201217  
+- **Jumanah Alharbi** – 444203677  
+- **Sarah Albuqami** – 444200576  
+- **Laila Aldayhani** – 444201199  
 
-## Project Title
-
-Customer Churn Prediction Using Machine Learning
 
 ---
 
@@ -29,14 +30,13 @@ We selected this problem because customer churn prediction is a real-world class
 
 The selected dataset from Kaggle is suitable for this task because it contains structured customer data, a clearly defined binary target variable (Exited), and sufficient feature diversity to perform meaningful analysis and modeling.
 
-
 ---
 
 ## Dataset Information
 
-Dataset Name: Churn Modelling Dataset  
-Source: Kaggle  
-Link: https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling  
+**Dataset Name:** Churn Modelling Dataset  
+**Source:** Kaggle  
+**Link:** https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling  
 
 ### Dataset Description
 
@@ -57,4 +57,3 @@ The dataset contains 10,000 customer records and multiple features, including:
 Each row represents a single customer, and each column represents a feature.
 
 The dataset is structured and suitable for supervised machine learning tasks.
-
