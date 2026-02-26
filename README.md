@@ -21,7 +21,7 @@ Machine Learning project for customer churn prediction using supervised learning
 
 ---
 
-## Motivation
+## Problem Motivation
 
 Customer churn is a critical challenge in the banking industry. When customers leave a bank, it directly impacts revenue, profitability, and long-term growth. Acquiring new customers is significantly more expensive than retaining existing ones, which makes churn prediction an essential business objective.
 
