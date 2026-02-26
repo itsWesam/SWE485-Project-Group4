@@ -3,9 +3,6 @@ Machine Learning project for customer churn prediction using supervised learning
 
 ---
 
-## Customer Churn Prediction – Phase 1
-
----
 
 ## Team Members
 
@@ -17,6 +14,10 @@ Machine Learning project for customer churn prediction using supervised learning
 - **Sarah Albuqami** – 444200576  
 - **Laila Aldayhani** – 444201199  
 
+
+---
+
+## Customer Churn Prediction – Phase 1
 
 ---
 
