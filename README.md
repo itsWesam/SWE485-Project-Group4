@@ -1,7 +1,5 @@
 # SWE485 – Project Group 4  
-Customer Churn Prediction Using Machine Learning
-
-ML project for customer churn prediction using supervised learning, unsupervised learning, and Generative AI integration.
+Machine Learning project for customer churn prediction using supervised learning, unsupervised learning, and Generative AI integration.
 
 ---
 
