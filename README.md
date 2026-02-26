@@ -1,13 +1,8 @@
 # SWE485 – Project Group 4  
-Customer Churn Prediction Using Machine Learning
-
-ML project for customer churn prediction using supervised learning, unsupervised learning, and Generative AI integration.
+Machine Learning project for customer churn prediction using supervised learning, unsupervised learning, and Generative AI integration.
 
 ---
 
-## Customer Churn Prediction – Phase 1
-
----
 
 ## Team Members
 
@@ -22,7 +17,11 @@ ML project for customer churn prediction using supervised learning, unsupervised
 
 ---
 
-## Motivation
+## Customer Churn Prediction – Phase 1
+
+---
+
+## Problem Motivation
 
 Customer churn is a critical challenge in the banking industry. When customers leave a bank, it directly impacts revenue, profitability, and long-term growth. Acquiring new customers is significantly more expensive than retaining existing ones, which makes churn prediction an essential business objective.
 
