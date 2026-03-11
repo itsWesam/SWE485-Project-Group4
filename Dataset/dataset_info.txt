@@ -1,0 +1,23 @@
+Dataset Information
+
+Dataset Name:
+Churn Modelling Dataset
+
+Kaggle URL:
+https://www.kaggle.com/datasets/shrutimechlearn/churn-modelling
+
+License:
+Unknown
+
+License Details:
+The dataset is publicly available on Kaggle.
+However, no explicit license is specified on the dataset page.
+It is assumed to be used for educational and research purposes only.
+Users should refer to the Kaggle platform’s general terms of use.
+
+Original Purpose:
+This dataset is intended for customer churn prediction in a banking context.
+It includes customer demographic and financial attributes such as credit score,
+geography, gender, age, tenure, balance, number of products, and activity status.
+The objective is to classify whether a customer exits (churns) or remains.
+It is widely used for binary classification tasks in machine learning.
