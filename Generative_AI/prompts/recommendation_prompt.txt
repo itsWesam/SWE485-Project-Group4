@@ -1,13 +1,11 @@
-You are a banking expert.
-
-Customer data:
-{features}
-
-Prediction: {prediction}
-
-Based on this, suggest what the bank should DO.
+Task:
+Suggest what the bank should do for this customer.
 
 Rules:
-- Max 3 recommendations
-- Actionable (real business actions)
-- Keep it short
+- Give exactly 3 recommendations
+- Keep each recommendation short and actionable
+- Base every recommendation only on the provided features and prediction
+- Do not mention features that are not shown
+- Do not make assumptions about hidden customer intentions
+- Focus on retention, engagement, or product strategy
+- Write in simple professional language

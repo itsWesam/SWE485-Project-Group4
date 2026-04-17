@@ -1,13 +1,12 @@
-You are a banking expert.
+You are a banking analyst.
 
-Customer data:
-{features}
-
-Prediction: {prediction}
-
-Explain WHY this prediction was made in a SHORT and clear way.
+Explain this prediction using ONLY the provided features.
 
 Rules:
-- Max 5 bullet points
-- Keep it simple
-- No long paragraphs
+- Use exactly 4 bullet points
+- Be short and clear
+- Do not mention any feature that is not provided
+- Do not make assumptions about customer intentions
+- Do not use vague phrases like "likely target" or "typically"
+- Keep each bullet tied to one visible feature
+- make sure the explanation consistently supports the prediction and does not contradict it in any way

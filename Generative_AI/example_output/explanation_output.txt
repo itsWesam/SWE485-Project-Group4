@@ -1,0 +1,21 @@
+===== Case 1 =====
+Based on the provided data, the prediction that the customer will stay is supported by these factors:
+
+*   The active member status confirms current engagement with bank services.
+*   An estimated salary of $101,348.88 establishes a solid financial foundation for the account.
+*   The customer's age of 42 years places them in a stable demographic for banking.
+*   A credit score of 619 meets the necessary threshold for maintaining the relationship.
+
+===== Case 2 =====
+*   The credit score of 497 is a low, high-risk value.
+*   The account balance of 0.0 shows zero financial commitment.
+*   The inactive member status (0) indicates a lack of engagement.
+*   The age of 24 is a high-risk indicator for account closure.
+
+===== Case 3 =====
+As a banking analyst, I have identified the following factors that support the prediction that the customer will stay:
+
+*   The Credit Score of 775 indicates a high level of financial reliability and account stability.
+*   The Estimated Salary of 193880.6 provides a substantial financial foundation for the customer to maintain their relationship with the bank.
+*   The Age of 30 represents a stage in the customer lifecycle with a long remaining duration for banking services.
+*   The count of one product establishes a formal and existing service relationship with the institution.

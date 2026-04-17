@@ -1,0 +1,10 @@
+Task:
+Write a short customer profile.
+
+Rules:
+- Write 2–3 sentences only
+- Use simple and clear language
+- Focus on behavior, financial habits, and engagement
+- Base the summary only on the provided features and prediction
+- Do not assume any missing information
+- Keep sentences concise and consistent

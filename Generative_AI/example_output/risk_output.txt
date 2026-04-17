@@ -1,0 +1,23 @@
+===== Risk Analysis Case 1 =====
+Medium risk
+
+* **Fair Credit Score:** A score of 619 is at the lower end of the "fair" range, indicating some credit vulnerability.
+* **Zero Balance:** Having 0.0 in the account reduces the customer's financial ties and "stickiness" to the bank.
+* **Single Product:** Usage of only one product makes the customer more susceptible to competitor offers than those with multiple products.
+* **Active Status:** Being an active member with a salary over $100k balances the risks, supporting the "Will Stay" prediction.
+
+===== Risk Analysis Case 2 =====
+High risk
+
+* **Poor Credit Score:** A score of 497 is significantly low, indicating higher financial risk and lower customer stickiness.
+* **Zero Account Balance:** A $0.0 balance suggests no financial depth or commitment to the institution.
+* **Inactive Status:** Being an inactive member (IsActiveMember: 0) is a strong leading indicator of imminent churn.
+* **Low Engagement:** Despite having 2 products, the lack of activity and zero balance makes the customer a high flight risk.
+
+===== Risk Analysis Case 3 =====
+Medium risk
+
+* High Credit Score (775) and high Estimated Salary ($193,880.60) indicate financial stability and low default risk.
+* IsActiveMember status is 0, showing a lack of engagement with the bank's services.
+* A Balance of 0.0 suggests the account is not being used for primary banking needs.
+* The customer only holds 1 product, which historically increases the likelihood of future attrition.
