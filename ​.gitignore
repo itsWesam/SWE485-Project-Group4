@@ -3,10 +3,10 @@ __pycache__/
 *.py[cod]
 *.so
 .env
+*.env
+.env.*
 .venv/
-venv/
-ENV/
-env/
+
 
 # Jupyter
 .ipynb_checkpoints/
@@ -20,4 +20,3 @@ Thumbs.db
 # Temporary files
 *.swp
 *.swo
-**/.env
