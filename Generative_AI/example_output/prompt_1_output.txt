@@ -1,0 +1,20 @@
+===== CUSTOMER OUTPUT =====
+
+
+--- Case 1 ---
+Recommendations:
+1.  Initiate immediate proactive outreach to understand the customer's initial experience and current needs, especially given their zero tenure and account balance.
+2.  Offer personalized financial advice or resources for credit improvement, considering their very low credit score and estimated salary.
+3.  Highlight the value and benefits of their existing products to encourage initial deposits and active account usage.
+
+--- Case 2 ---
+Recommendations:
+1.  **Increase account activity:** Utilize digital banking services for regular transactions, bill payments, or direct deposits to become an active member and unlock full benefits.
+2.  **Review your current products:** Schedule a personalized review to ensure your current 3 products meet your evolving needs and explore ways to consolidate your primary banking, potentially increasing your balance and engagement.
+3.  **Connect with a financial advisor:** Reach out to a dedicated financial advisor or relationship manager to address any concerns, optimize your current setup, and find tailored solutions to enhance your banking experience as a new customer.
+
+--- Case 3 ---
+Recommendations:
+1.  Explore additional banking products, such as investment accounts or wealth management services, to leverage your high estimated salary and excellent credit score.
+2.  Take advantage of exclusive benefits and personalized financial advice available to our valued, active members.
+3.  Consider a complimentary financial review to ensure your current banking portfolio aligns with your evolving long-term goals.

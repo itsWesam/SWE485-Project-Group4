@@ -1,0 +1,35 @@
+===== ANALYST OUTPUT =====
+
+
+--- Case 1 ---
+Reasoning:
+The customer presents an extremely high risk profile due to a very low credit score and very low estimated salary, indicating potential financial instability and limited capacity for traditional banking products.
+Zero tenure and zero balance, despite having two products, suggest a critical failure in the initial onboarding process or immediate dissatisfaction, as the customer has not engaged financially with the bank at all.
+The combination of high financial risk, lack of initial engagement, and very early churn signal (zero tenure) points to a customer who likely opened an account but found it unsuitable, was denied further services, or never fully committed to using the bank's offerings.
+
+Recommendations:
+1.  **Immediate Onboarding Intervention:** Initiate proactive contact with the customer to understand the specific barriers preventing account funding and active product usage, given the zero tenure and zero balance.
+2.  **Re-evaluate Product Suitability:** Investigate the two products the customer has to ensure they are appropriate for their very low credit score and estimated salary. There might be a mismatch between what was offered/chosen and what the customer can actually utilize or qualify for.
+3.  **Offer Basic Financial Guidance and Low-Barrier Solutions:** If the bank aims to serve this segment, consider offering financial literacy resources or introducing basic banking products (e.g., a simple savings account with no minimum balance requirements) that could help them build financial stability, rather than immediately pushing credit products.
+4.  **Flag for High-Risk New Customer Monitoring:** Place this customer on an immediate churn prevention watch list specifically for new, unengaged, high-risk customers, to learn from such early departures and refine onboarding processes.
+
+--- Case 2 ---
+Reasoning:
+The customer has a very short tenure (1 year), indicating a new relationship that may not be fully solidified. Despite having multiple products (3), the customer is not an active member and has a relatively low balance, suggesting weak engagement and potential dissatisfaction or lack of consolidated banking. These factors significantly increase the likelihood of churn.
+
+Recommendations:
+1.  **Prioritize Early Retention:** Given the short tenure, initiate proactive outreach to understand their initial experience with the bank, address any potential issues, and solidify the relationship before they decide to leave.
+2.  **Investigate Engagement Drivers:** Despite having 3 products, the customer is inactive. Investigate how they are using these products (or not using them) and what might be preventing deeper engagement. Avoid offering more products without understanding their current needs and satisfaction.
+3.  **Incentivize Activity and Consolidation:** Offer personalized incentives to increase account activity, consolidate more of their financial services with the bank, or grow their balance. This could include preferential rates, loyalty rewards, or tailored financial planning advice.
+
+--- Case 3 ---
+Reasoning:
+The customer demonstrates strong financial health and stability, indicated by a very high credit score and a high estimated salary.
+Their active membership and stable tenure suggest strong engagement and satisfaction with the bank's services.
+At 30 years old, this customer represents significant long-term potential for the bank to grow their relationship and product engagement.
+
+Recommendations:
+1.  **Prioritize Cross-selling and Up-selling:** Given the high estimated salary and the fact they currently have only one product, actively identify and offer additional relevant products such as investment accounts, mortgages, personal loans, or premium credit cards tailored to their financial capacity and life stage.
+2.  **Deepen Customer Relationship:** Acknowledge and reinforce their value as a reliable and engaged customer. Consider offering personalized financial advisory services or assigning a dedicated relationship manager to anticipate future needs.
+3.  **Engage in Financial Planning:** Proactively offer wealth management or retirement planning services to help them manage their high income and grow their assets, further integrating their financial life with the bank.
+4.  **Leverage for Referrals:** As a highly satisfied and active customer, they are an excellent candidate for referral programs, potentially attracting other high-value clients.

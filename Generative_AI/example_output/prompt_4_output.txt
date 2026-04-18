@@ -1,0 +1,27 @@
+===== MARKETING OUTPUT =====
+
+
+--- Case 1 ---
+Here are marketing recommendations for this customer:
+
+1.  Offer a personalized welcome incentive to boost engagement for new customers with zero tenure.
+2.  Promote a special offer to encourage an initial deposit given their zero balance.
+3.  Propose financial literacy resources to address the very low CreditScore.
+4.  Introduce a secure card option, as they have no credit card and low CreditScore.
+5.  Offer budget-friendly banking solutions suitable for their low estimated salary.
+
+--- Case 2 ---
+Here are recommendations for the marketing team:
+
+1.  Offer exclusive benefits to reactivate this inactive member, fostering engagement.
+2.  Proactively offer a loyalty incentive to retain this customer with 1-year tenure.
+3.  Review and optimize the utility of this customer's 3 products for better value.
+
+--- Case 3 ---
+Here are some marketing recommendations:
+
+1.  Offer exclusive wealth management options, given her high CreditScore and EstimatedSalary.
+2.  Introduce additional financial products to this customer, who currently only has one product.
+3.  Reward her active member status with loyalty benefits to reinforce continued engagement.
+4.  Propose a savings plan that rewards her five years of tenure and current balance.
+5.  Suggest local French banking services tailored for her age group of 30.

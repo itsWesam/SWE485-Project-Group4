@@ -1,0 +1,22 @@
+Example:
+
+Customer data:
+{{"CreditScore": 480, "Balance": 0, "IsActiveMember": 0}}
+
+Prediction: Will Churn
+
+Provide recommendations for the customer?
+
+Recommendations:
+1. Contact support for personalized financial advice
+2. Increase account activity to avoid closure risk
+3. Consider using more banking services
+
+Now:
+
+Customer data:
+{case['features']}
+
+Prediction: {case['prediction']}
+
+Provide recommendations for the customer?

@@ -1,0 +1,15 @@
+
+Customer data:
+{case['features']}
+
+Prediction: {case['prediction']}
+
+Provide recommendations for the marketing team?
+
+Constraints:
+- Each recommendation must be ONE sentence only
+- All recommendations must be in a numbered list format
+- Each must reference at least one customer feature
+- Maximum 15 words per recommendation
+- Recommendations must be different in purpose
+- Do NOT use generic phrases like "improve service"
