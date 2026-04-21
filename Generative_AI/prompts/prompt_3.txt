@@ -1,0 +1,27 @@
+Example:
+
+Customer data:
+{{"CreditScore": 480, "Balance": 0, "IsActiveMember": 0}}
+
+Prediction: Will Churn
+
+Provide recommendations for the banking analyst?
+
+Reasoning:
+The customer has a low credit score, indicating higher financial risk.
+Zero balance and inactivity suggest weak engagement with the bank.
+These factors increase the likelihood of churn.
+
+Recommendations:
+1. Prioritize this customer for retention monitoring.
+2. Investigate low engagement drivers before offering new products.
+3. Target interventions that increase account activity.
+
+Now:
+
+Customer data:
+{case['features']}
+
+Prediction: {case['prediction']}
+
+Provide recommendations for the banking analyst?

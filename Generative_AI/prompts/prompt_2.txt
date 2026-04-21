@@ -1,0 +1,6 @@
+Customer data:
+{case['features']}
+
+Prediction: {case['prediction']}
+
+Provide recommendations for the banker regarding the customer?
