@@ -25,9 +25,11 @@ Because of these differences, one generic prompt would not have been sufficient.
 
 ### T1 — Customer Retention Advice Template
 
-The target user for this template is the bank customer. Its intended use case is to provide supportive and simple advice after a churn prediction is generated. The purpose is not to explain the model in technical terms, but to offer clear next steps in language that is easy to understand.
+The target user for this template is the bank customer. Its intended use case is to provide supportive and simple advice with a supportive tone that suits the customer especially non-experienced ones, after a churn prediction is generated. The purpose is not to explain the model in technical terms, but to offer clear next steps in language that is easy to understand.
 
-This template uses one-shot prompting. This technique was selected because example-guided prompts help the model produce more consistent and readable customer-facing outputs. Since the customer is a non-expert user, the response should be supportive, clear, and non-technical.
+**Persona:** A non-technical banking customer with limited financial or technical knowledge who may not fully understand why they are considered at risk of churn. The customer may feel uncertain or overwhelmed by financial decisions and therefore requires supportive, reassuring, and actionable guidance written in simple language without technical terminology.
+
+This template uses one-shot prompting. This technique was selected because example-guided prompts help the model produce more consistent and readable customer-facing with appropriate tone outputs. Since the customer is a non-expert user, the response should be supportive, clear, and non-technical.
 
 Banking domain knowledge influenced this template by shaping the recommendations around realistic actions such as increasing account engagement, reviewing available services, and contacting the bank for guidance. The wording avoids technical machine learning language and avoids making unrealistic financial promises.
 
@@ -35,13 +37,17 @@ Banking domain knowledge influenced this template by shaping the recommendations
 
 The target user for this template is a banker, relationship manager, or retention officer. Its intended use case is to provide a quick internal action recommendation based on the churn prediction result and customer features.
 
-This template uses zero-shot prompting. This technique fits because the banker’s task is direct and operational. The output does not require an example to establish tone. Instead, it requires a professional and structured response that supports immediate action.
+**Persona:** A banking employee responsible for customer retention and relationship management who works in a fast-paced operational environment. The stakeholder requires concise, structured, and immediately actionable recommendations that can support quick decision-making and customer follow-up activities without needing long explanations.
+
+This template uses zero-shot prompting. This technique fits because the banker’s task is direct and operational. The output does not require an example to establish tone. Instead, it requires a professional and structured response with no restrictions that consider different recommendations that supports immediate action.
 
 Banking domain knowledge shaped this prompt by focusing on practical internal fields such as risk summary, recommended next action, reason for action, and priority level. This reflects how bank staff would typically interpret a churn case in a retention workflow.
 
 ### T3 — Banking Analyst Explanation Template
 
-The target user for this template is an analyst, reviewer, or internal reporting user. Its intended use case is to explain likely churn risk using structured evidence from the available customer features.
+The target user for this template is an analyst, Its intended use case is to explain likely churn risk using structured evidence from the available customer features.
+
+**Persona:** A banking analyst responsible for evaluating churn predictions, understanding customer risk behavior, and supporting strategic retention decisions. The analyst requires interpretable and evidence-based explanations that clearly describe why the customer is likely to churn, what factors contributed to the prediction, and which indicators may reduce or increase the churn risk.
 
 This template uses reasoning-based prompting. This technique fits because the analyst needs more than a recommendation. The analyst needs interpretability. The output should explain likely churn drivers, identify protective factors, and suggest an appropriate retention focus.
 
@@ -49,7 +55,9 @@ Banking domain knowledge strongly influenced this prompt by including concepts s
 
 ### T4 — Marketing Retention Campaign Template
 
-The target user for this template is a marketing or CRM team. Its intended use case is to provide concise campaign-oriented retention guidance that can support outreach planning.
+The target user for this template is a marketing team. Its intended use case is to provide concise campaign-oriented retention guidance that can support outreach planning.
+
+**Persona:** A marketing specialist or campaign planner responsible for designing customer retention campaigns and communication strategies. The stakeholder needs short, segment-focused, and communication-ready recommendations that can quickly support campaign targeting, messaging decisions, and outreach planning across different customer groups.
 
 This template uses constraint-based prompting. This technique fits because marketing-oriented outputs benefit from brevity, consistency, and reusable structure. The goal is not to generate a long explanation, but to produce a short and practical output that can support communication planning.
 
@@ -57,17 +65,17 @@ Banking domain knowledge influenced this template by shaping the output around s
 
 ## 4. Evolution During Testing
 
-The prompts improved through iterative testing and refinement.
+The prompts evolved through iterative testing and refinement to better align the generated outputs with the needs of each intended stakeholder. Early versions often produced responses that were too generic, inconsistent, or insufficiently structured. Through testing, prompt constraints, trying different prompt techinques, and guidance were gradually refined to improve clarity, relevance, and role alignment.
 
-Template T1 improved after adding one-shot example guidance. Early versions were more generic, but the example made the customer-facing style more supportive and consistent.
+Template T1 improved after introducing one-shot example guidance. Earlier outputs lacked consistency in tone and sometimes generated responses that felt too generic for customer communication. The example helped the model better understand the expected supportive and user-friendly style, resulting in more natural and consistent customer-facing explanations.
 
-Template T2 improved after adding a fixed operational structure. Without this structure, the outputs were sometimes too broad. Requiring a risk summary, next action, reason, and priority made the banker-oriented response more useful.
+Template T2 improved after adding a fixed operational structure. Initial outputs occasionally mixed risk interpretation with recommendations, making them harder for bankers to scan quickly. By enforcing "reccomendations" order, the responses became more actionable and operationally focused.
 
-Template T3 improved after requiring clear explanatory sections. This helped the model separate interpretation, churn drivers, protective factors, and retention focus instead of mixing them into one general paragraph.
+Template T3 improved after introducing clearly separated explanatory reasoning sections. Earlier versions mainly provided recommendations without sufficient supporting analysis, which limited their usefulness for banking analysts. The outputs often lacked clear explanations of why the customer was predicted to churn, making it difficult to understand the underlying risk factors and make informed decisions. By separating interpretation, churn drivers, and recommendations into distinct sections, the responses became more transparent, analytical, and easier for analysts to evaluate and act upon.
 
-Template T4 improved after applying format and length constraints. Early outputs were sometimes too broad or too similar to the banker template. The constraints made the output more concise, structured, and aligned with marketing use.
+Template T4 improved after applying stricter formatting and length constraints. Earlier outputs were sometimes overly detailed or too similar to the banker-oriented template. The added constraints encouraged concise and targeted responses that better matched marketing communication needs.
 
-These changes showed that prompt performance improved when the expected output format was stated clearly and matched the real needs of the intended user.
+Overall, the testing process demonstrated that prompt specificity, structural guidance, and stakeholder-oriented constraints significantly improved output quality, consistency, and usability.
 
 ## 5. Lessons Learned
 
