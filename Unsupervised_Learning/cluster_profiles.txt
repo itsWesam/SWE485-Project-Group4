@@ -1,0 +1,166 @@
+================================================================
+  SWE485 – Project Group 4
+  Phase 2: Unsupervised Learning – Cluster Profiles
+  Dataset: Churn Modelling (10,000 customers)
+================================================================
+
+----------------------------------------------------------------
+SECTION 1: K-MEANS CLUSTERING
+----------------------------------------------------------------
+
+Configuration:
+  Algorithm       : K-Means
+  Number of clusters (k) : 3
+  Random state    : 42
+  n_init          : 10
+
+Evaluation Metrics:
+  Silhouette Score      : 0.1192  (higher is better, max = 1)
+  Davies-Bouldin Index  : 2.4520  (lower is better)
+  WCSS at k=3           : 72,823.62
+
+Cluster Size Distribution:
+  Cluster 0 : 2,940 customers
+  Cluster 1 : 4,118 customers
+  Cluster 2 : 2,942 customers
+
+Churn Rate per Cluster:
+  Cluster 0 : 20.7%
+  Cluster 1 : 22.5%
+  Cluster 2 : 17.2%
+  Overall   : 20.4%
+
+Top Features Contributing to Cluster Differences (Variance):
+  1. HasCrCard        : 1.6016
+  2. Balance          : 0.8147
+  3. NumOfProducts    : 0.2430
+  4. Tenure           : 0.0010
+  5. EstimatedSalary  : 0.0006
+  6. Age              : 0.0005
+  7. Gender_Male      : 0.0003
+  8. IsActiveMember   : 0.0002
+  9. CreditScore      : 0.0001
+
+Cluster Profiles (mean feature values):
+
+  CLUSTER 0 – "No Credit Card, Medium Balance"
+  - HasCrCard      : 0.00  (no credit card)
+  - Balance        : medium-high
+  - NumOfProducts  : ~1–2
+  - Churn Rate     : 20.7%
+  - Interpretation : Customers without credit cards and moderate balances.
+                     Moderate churn risk. Opportunity to offer credit card
+                     products as a retention strategy.
+
+  CLUSTER 1 – "Credit Card Holders, Mixed Balance"
+  - HasCrCard      : 1.00  (all have credit card)
+  - Balance        : mixed, many with zero balance
+  - NumOfProducts  : ~1
+  - Churn Rate     : 22.5%  (highest)
+  - Interpretation : Credit card holders with the highest churn rate despite
+                     having a bank product. May be disengaged customers.
+                     Targeted engagement campaigns recommended.
+
+  CLUSTER 2 – "Credit Card Holders, Multi-Product"
+  - HasCrCard      : 1.00  (all have credit card)
+  - Balance        : lower average
+  - NumOfProducts  : ~2+
+  - Churn Rate     : 17.2%  (lowest)
+  - Interpretation : Most loyal segment. Multiple product holders with credit
+                     cards show the lowest churn. Retain with loyalty rewards.
+
+----------------------------------------------------------------
+SECTION 2: DBSCAN CLUSTERING
+----------------------------------------------------------------
+
+Configuration:
+  Algorithm       : DBSCAN
+  eps             : 2.1
+  min_samples     : 5
+  eps selection   : k-distance (k=5) elbow plot
+
+Evaluation Metrics:
+  Silhouette Score      : 0.1279  (higher is better, max = 1)
+  Davies-Bouldin Index  : 1.9509  (lower is better)
+  WCSS                  : N/A (not applicable to DBSCAN)
+  Noise points excluded : 34 (0.3% of data)
+
+Cluster Results:
+  Number of clusters found : 3
+  Noise points (-1)        : 34  (0.3%)
+  Total points             : 10,000
+
+Churn Rate per Cluster:
+  Noise (-1)  : 94.1%  (extreme — atypical high-risk customers)
+  Cluster 0   : 19.9%
+  Cluster 1   : 20.4%
+  Cluster 2   : 100.0% (very small group, all churned)
+  Overall     : 20.4%
+
+Cluster Profiles:
+
+  CLUSTER -1 – "Noise / Atypical Customers"
+  - Count       : 34 customers
+  - Churn Rate  : 94.1%
+  - Interpretation : These customers do not fit any dense segment.
+                     Their extremely high churn rate (94.1%) makes them
+                     the highest-priority group for individual retention
+                     intervention. Flag for manual review.
+
+  CLUSTER 0 – "Core Majority Segment"
+  - Count       : large majority of customers
+  - Churn Rate  : 19.9%
+  - Interpretation : The main customer base. Broadly similar to K-Means
+                     Cluster 0/1 in behaviour. Standard retention strategies
+                     apply.
+
+  CLUSTER 1 – "Secondary Dense Segment"
+  - Count       : second largest group
+  - Churn Rate  : 20.4%
+  - Interpretation : Closely mirrors Cluster 0 in churn rate. Slight
+                     behavioural differences captured by density separation.
+
+  CLUSTER 2 – "High-Risk Micro Segment"
+  - Count       : very small
+  - Churn Rate  : 100.0%
+  - Interpretation : Every customer in this tiny dense group churned.
+                     Represents a critical at-risk profile that should be
+                     studied and targeted immediately.
+
+----------------------------------------------------------------
+SECTION 3: ALGORITHM COMPARISON
+----------------------------------------------------------------
+
+  Metric                  K-Means        DBSCAN
+  -------------------------------------------------------
+  Number of clusters      3              3 (+noise)
+  Silhouette Score        0.1192         0.1279
+  Davies-Bouldin Index    2.4520         1.9509
+  WCSS                    72,823.62      N/A
+  Noise points            0              34 (0.3%)
+  Requires k upfront      Yes            No
+  Cluster shapes          Spherical      Arbitrary
+
+  Winner: DBSCAN produces slightly better Silhouette and Davies-Bouldin
+  scores, and importantly identifies 34 noise points with 94.1% churn
+  rate — a critical insight K-Means cannot provide.
+
+----------------------------------------------------------------
+SECTION 4: INTEGRATION WITH CHURN PREDICTION SYSTEM
+----------------------------------------------------------------
+
+Both clustering results are exported to Dataset/clustered_data.csv
+with columns KMeans_Cluster and DBSCAN_Cluster added to each row.
+
+Integration uses:
+  1. KMeans_Cluster label as an additional feature for the Random
+     Forest pipeline (rf_pipeline.pkl) from Phase 1.
+  2. DBSCAN noise flag (-1) as a high-priority churn alert.
+  3. Cluster profiles as context for Generative AI prompt templates
+     in Phase2_Generative_AI.ipynb — each cluster maps to a
+     personalised retention recommendation strategy.
+
+================================================================
+  Generated by: SWE485 Project Group 4
+  Phase 2 – Unsupervised Learning
+================================================================
